@@ -1,4 +1,5 @@
 language: d
+d: dmd-2.079.0
 services: postgresql
 before_script:
 - psql -c 'create database vonneybot;' -U postgres
