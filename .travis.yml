@@ -3,8 +3,8 @@ services: postgresql
 before_script:
 - psql -c 'create database vonneybot;' -U postgres
 - psql -c 'create user f;' -U postgres
-- psql -c 'grant all privileges on database vonneybot to f;' -U postgres
 - psql -c 'create table settings (name varchar(64) primary key, value varchar(128));' -U postgres
+- psql -c 'grant all privileges on database vonneybot to f;' -U postgres
 script:
 - mv dub.json.for_travis dub.json
 - dub
