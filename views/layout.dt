@@ -1,0 +1,7 @@
+doctype html
+html
+	head
+		title sqtd
+		<link rel="stylesheet" href="styles/normalize.css">
+	body
+		block body

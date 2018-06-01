@@ -1,0 +1,18 @@
+{
+	"name": "vonneybot",
+	"authors": [
+		"Filipp Chertiev"
+	],
+	"dependencies": {
+		"vibe-d": "~>0.8.2",
+		"dpq2": "~>1.0.0-rc.1",
+		"vibe-d-postgresql": "~>2.0.0-alpha.2",
+		"vibe-d:tls": "*"
+	},
+	"subConfigurations": {
+		"vibe-d:tls": "openssl-1.1"
+	},
+	"description": "vonney telegram bot server",
+	"copyright": "Copyright © 2018, Filipp Chertiev",
+	"license": "proprietary"
+}
