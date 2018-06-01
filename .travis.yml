@@ -1,12 +1,12 @@
-dist: bionic
+dist: trusty
 sudo: required
 language: d
 d: dmd-2.079.0
 services: postgresql
 before_script:
-- sudo apt-get install libssl-dev
+- mv dub.json.for_travis dub.json
 - psql -c 'create database vonneybot;' -U postgres
 - psql -c 'create table settings (name varchar(64) primary key, value varchar(128));' -U postgres -d vonneybot
 script:
-- sed -i s/dbUserName\ =\ \"f\"/dbUserName\ =\ \"postgres\"/ source/app.d
+- sed -i s/dbUserName.*=.*\"f\"/dbUserName=\"postgres\"/ source/app.d
 - dub
