@@ -2,7 +2,7 @@ language: d
 d: dmd-2.079.0
 services: postgresql
 before_script:
-- sudo apt-get install libssl1.1-dev
+- sudo apt-get install libssl_1.1-dev
 - psql -c 'create database vonneybot;' -U postgres
 - psql -c 'create table settings (name varchar(64) primary key, value varchar(128));' -U postgres -d vonneybot
 script:
