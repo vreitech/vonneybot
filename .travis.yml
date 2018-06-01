@@ -1,2 +1,4 @@
 language: d
-script: dub
+script:
+- mv dub.json.for_travis dub.json
+- dub
