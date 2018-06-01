@@ -14,5 +14,5 @@
 	},
 	"description": "vonney telegram bot server",
 	"copyright": "Copyright © 2018, Filipp Chertiev",
-	"license": "proprietary"
+	"license": "GPLv2"
 }
